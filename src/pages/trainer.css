@@ -1,0 +1,60 @@
+.trainers_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4rem;
+}
+.car.trainer{
+    padding: 1rem;
+}
+.tainer_img{
+    border: 0 2rem;
+    overflow: hidden;
+}
+.trainer p{
+    margin-top: 0.5rem;
+}
+.trainer h3{
+    margin-top: 2rem;
+}
+.trainer_socials{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+
+}
+.trainer_socials a{
+    font-size: 0.7rem;
+    background: rgb(139, 136, 136);
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+
+    transition: var(--transition);
+}
+.trainer:hover a{
+    background: rgb(58, 58, 58);
+}
+
+
+/* media query for medium screen */
+
+@media(max-width:1024px){
+    .trainers_container{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+/* media query for small screen */
+
+@media(max-width:600px){
+    .trainers_container{
+        grid-template-columns:1fr;
+        gap: 2rem;
+    }
+    .card.trainer{
+        width: 90%;
+        margin-inline: auto;
+    }
+}
